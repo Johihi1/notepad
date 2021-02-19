@@ -8,21 +8,20 @@
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.beans.PropertyChangeListener;
 
 public class Notepad {
-    private JButton NewFile;
-    private JButton Save;
+    private JButton newfilebutton;
+    private JButton savefilebutton;
     private JButton openFileButton;
 
     public Notepad() {
-        NewFile.addMouseListener(new MouseAdapter() {
+        newfilebutton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
             }
         });
-        Save.addMouseListener(new MouseAdapter() {
+        savefilebutton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
@@ -39,8 +38,6 @@ public class Notepad {
     public static void main(String[] args) {
         private JTextArea TextArea;
         private JPanel panel1;
-        private JButton NewFile;
-        private JButton Save;
         private JScrollBar scrollBar1;
     }
 }
